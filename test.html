@@ -1,0 +1,31 @@
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- bxSlider Javascript file -->
+<script src="slider/jquery.bxslider.min.js"></script>
+<!-- bxSlider CSS file -->
+<link href="slider/jquery.bxslider.css" rel="stylesheet" />
+
+
+<script>
+$(document).ready(function(){
+	$('.bxslider').bxSlider({
+		slideWidth: 400,
+		minSlides: 3,
+		maxSlides: 3,
+		slideMargin: 10
+	});
+});
+</script>
+
+<body>
+<ul class="bxslider" id="displayItem">
+	<li>123</li>
+	<li>456</li>
+	<li>789</li>
+	<li>111</li>
+	<li>222</li>
+</ul>
+</body>
+
+</html>

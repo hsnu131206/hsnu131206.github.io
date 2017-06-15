@@ -1,0 +1,255 @@
+<html>
+	<head>
+		<title>履歷測試</title>
+		<style type="text/css">
+		nav{
+				border:2px solid black;
+				text-align:center;
+				height:10%;
+				background-color:black;
+				color:white;
+				float:left;
+				width:100%;
+				position:fixed;
+				z-index:2;
+			}
+		#name{
+			font-family:微軟正黑體;
+			font-weight:bold;
+			font-size:20px;
+			margin-top:8px;
+		}
+		body{
+			margin:0px;
+		}
+		#bar{
+			font-family:微軟正黑體;
+			font-weight:bold;
+		}
+		.floated{float: left;}
+		a{text-decoration: none;
+			color: white;
+			font-family: 微軟正黑體;
+		}
+		a:hover{color:red;}
+		.imghover:hover{
+			width:903px; height:630px;
+		}
+		.maildiv{
+			width:100%;
+		}
+		body{
+			background-color:gray;
+			color:white;
+		}
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+		<!-- bxSlider Javascript file -->
+		<script src="slider/jquery.bxslider.min.js"></script>
+		<!-- bxSlider CSS file -->
+		<link href="slider/jquery.bxslider.css" rel="stylesheet" />
+		<script>
+			$(document).ready(function(){
+				$('.bxslider').bxSlider({
+					slideWidth: 2000,
+					minSlides: 1,
+					maxSlides: 1,
+					slideMargin: 10
+				});
+			});
+		</script>
+		<script>
+			function validate() {
+			if ( document.forms[0].elements[0].value == "" ) {
+			alert("「傳送者姓名」欄中不可為空白！");
+			document.forms[0].elements[0].focus();
+			} else if ( document.forms[0].elements[1].value == "" || ( document.forms[0].elements[1].value.indexOf 
+			== -1 || document.forms[0].elements[1].value.indexOf == -1 )) {
+			alert("「傳送者電子郵件」欄不可為空白！");
+			document.forms[0].elements[1].focus();
+			} else if ( document.forms[0].elements[1].value == "" || ( document.forms[0].elements[1].value.indexOf('@',0) 
+			== -1 || document.forms[0].elements[1].value.indexOf('.',0) == -1 )) {
+			alert("你所輸入的電子郵件不合法！");
+			document.forms[0].elements[1].focus();
+			} else if ( document.forms[0].elements[2].value == "" ) {
+			alert("「主旨」區域不可為空白！");
+			document.forms[0].elements[2].focus();
+			} else if ( document.forms[0].elements[3].value == "" ) {
+			alert("「留言內容」區域不可為空白！");
+			document.forms[0].elements[3].focus();
+			} else 
+			{
+			alert("謝謝您已完成傳送！");
+			return true;
+			}
+			return false;
+			}
+		</script>
+	</head>
+	<body>
+		<a href = "履歷.html">
+		<nav><img src="logo.png" class="floated" style="width:72px;height:60px;vertical-align:bottom;"></a><label id="name" class="floated">吉天偉<br>Wei</label></nav>
+			<label style="position:fixed;top:25px;left:620px;z-index:3;"><a href = "#about-section">基本資料</a></label>
+			<label style="position:fixed;top:25px;left:770px;z-index:3;"><a href = "#study-section">學歷</a></label>
+			<label style="position:fixed;top:25px;left:890px;z-index:3;"><a href = "#experience-section">經歷</a></label>
+			<label style="position:fixed;top:25px;left:1000px;z-index:3;"><a href = "#skills-section">專業技能、特殊能力</a></label>
+			<label style="position:fixed;top:25px;left:1210px;z-index:3;"><a href = "#call-section">聯絡我</a></label>
+		</nav>
+		
+		<div style="width:100%;height:100%;background-image:url('首頁背景.jpg');background-repeat:no-repeat;background-size:100% 100%;"></div>
+		<ul class="bxslider" id="displayItem">
+				<li><center><img src="橫幅1.jpg" width="100%" style="z-index:0"></center></li>
+				<li><center><img src="橫幅2.jpg" width="100%" style="z-index:0"></center></li>
+				<li><center><img src="橫幅3.jpg" width="100%" style="z-index:0"></center></li>
+		</ul>
+		<section id="about-section"\>
+		<center><table border = "1" width = "50%" style="background-color:gray;color:white;border-color:black;">
+		
+			<caption><h1>基本資料</h1><hr width = "50%"></caption>
+		
+				<tr>
+					<th  style="background-color:gray;color:white">中文名字</th>
+					<th colspan = "2">吉天偉</th>
+					<th>英文名字</th>
+					<th colspan = "2">JI TIAN WEI</th>
+					<th rowspan = "3"><img src="123.png" style="width:140px;height:120px;"></th>
+				</tr>
+				<tr>
+					<th>國籍</th>
+					<th>中華民國</th>
+					<th>性別</th>
+					<th>男</th>
+					<th>身分證字號</th>
+					<th>F129404480</th>
+					
+				</tr>
+				<tr>
+					<th>身高</th>
+					<th>183</th>
+					<th>體重</th>
+					<th>73</th>
+					<th>出生年月日</th>
+					<th>1995/06/16</th>
+				</tr>
+				<tr>
+					<th>電話</th>
+					<th>0918304999</th>
+					<th>住址</th>
+					<th colspan = "4"></th>
+				</tr>
+		</table></center>
+		<br><br><br>
+		</section>
+		<section id="study-section" style="background-color:white;color:black;">
+		<center><table border = "0" width = "100%">
+		
+			<caption><h1 style="background-color:white;color:black;">學歷</h1><hr width = "50%"></caption>
+		
+				<tr>
+					<th width = "25%" style="background-color:white;color:black;">明志國民小學</th>
+					<th width = "25%" style="background-color:white;color:black;">市立義學國民中學</th>
+					<th width = "25%" style="background-color:white;color:black;">市立新莊高中</th>
+					<th width = "25%" style="background-color:white;color:black;">國立臺灣海洋大學</th>
+				</tr>
+				<tr>
+					<th style="background-color:white;color:black;">2006~2011</th>
+					<th style="background-color:white;color:black;">2011~2013</th>
+					<th style="background-color:white;color:black;">2013~2015</th>
+					<th style="background-color:white;color:black;">2015~2018</th>
+				</tr>
+				<tr>
+					<td style="background-color:white;color:black;">擔任系統管理師一職。任教樂齡班及三到六年級電腦課程，協助系統開發、伺服器管理、攝影拍照、影片製作等業務。</td>
+					<td style="background-color:white;color:black;">擔任圖書資訊與檔案研究所，國科會計畫，合作式探究式學習(Inquiry-based learning)教學系統cWISE(UC Berkeley)資訊團隊一職。</td>
+					<td style="background-color:white;color:black;">擔任圖書資訊與檔案研究所，教育部通識教育計畫，開放式課程(Open courseware)資訊團隊一職。</td>
+					<td style="background-color:white;color:black;">大學二年級暑期擔任校內電資營幹部、三年級暑期擔任程式設計工讀生。目前則致力於學校畢業專題。</td>
+				</tr>
+				<tr>
+					<th><a href ="http://www.mjes.ntpc.edu.tw/default_page.asp" target= "_blank"><img src="5.jpg" style="width:250px;height:150px;"></a></th>
+					<th><a href ="http://www.yhjh.ntpc.edu.tw/default_page.asp" target= "_blank"><img src="6.jpg" style="width:250px;height:150px;"></a></th>
+					<th><a href ="http://www.hcsh.ntpc.edu.tw/ischool/publish_page/55/" target= "_blank"><img src="7.jpg" style="width:250px;height:150px;"></a></th>
+					<th><a href ="http://www.ntou.edu.tw/bin/home.php" target= "_blank"><img src="8.jpg" style="width:250px;height:150px;"></a></th>
+				</tr>
+		</table></center></section>
+		<section id="experience-section">
+			<br><br><br>
+			<center>
+			<caption><h1>經歷</h1><hr width = "50%"></caption>
+			<br>
+			大學曾任電資營工作人員
+			<br><br><br>
+			</center>
+		</section>
+		<section id="skills-section" style="background-color:white">
+			<br><br><br>
+			<center>
+			<caption><h1 style="background-color:white;color:black;">專業技能、特殊能力</h1><hr width = "50%"></caption>
+			<br>
+			<h1 style="background-color:white;color:black;">多益測驗</h1>
+			<img src="多益金色證書.png" class="imghover">
+			<h1 style="background-color:white;color:black;">JAVA</h1>
+			<br>
+			<label style="background-color:white;color:black;">會一點</label>
+			<br>
+			<br>
+			<h1 style="background-color:white;color:black;">HTML5,CSS,javascript</h1>
+			<br>
+			<label style="background-color:white;color:black;">略懂</label>
+			<br>
+			<br>
+			<h1 style="background-color:white;color:black;">C,C++</h1>
+			<br>
+			<label style="background-color:white;color:black;">我曾經很6的</label>
+			<br>
+			<br>
+			<caption><h1 style="background-color:white;color:black;">作品</h1><hr width = "50%"></caption>
+			<h1 style="background-color:white;color:black;">簡易RPG遊戲</h1>
+			<label style="background-color:white;color:black;">之前跟朋友一起寫的，無使用遊戲引擎，而是使用純JAVA code做出類似RPG小遊戲</label>
+			<br>
+			<a href="https://www.youtube.com/watch?v=IBamvBraFXc&t=28s">
+			<video src="RPG遊戲試作.mp4" controls preload style="width:903px;z-index:1;"/>
+			</a>
+			<h1 style="background-color:white;color:black;">資料庫結合網頁概念實作</h1>
+			<label style="background-color:white;color:black;">練習使用MySQL結合網頁做出類似商店後端資料管理概念</label>
+			<br>
+			<a href="https://www.youtube.com/watch?v=BgGfLBdPqIk">
+			<video src="資料庫試作.mp4" controls preload style="width:903px;z-index:1;" />
+			</a>
+			<br><br><br>
+			</center>
+		</section>
+		<section id="call-section">
+			<br><br><br>
+			<div style="position:absolute;right:10px;width:50%;">
+			<caption><h1>聯絡我</h1><hr color="white"></caption>
+			<br>
+			<FORM action="mailto:hsnu131206@gmail.com" encType="text/plain" method="post" onsubmit="return validate()">
+				<table border="0" cellpadding="4" bgcolor="gray" style="width:100%">
+				<tr>
+				<td><input type="text" size="20" name="姓　　名：" placeholder="您的姓名" style="width:100%;height:50px"></td>
+				</tr>
+				<tr>
+				<td><input type="text" size="50" name="電子信箱：" placeholder="您的信箱" style="width:100%;height:50px"></td>
+				</tr>
+				<tr>
+				<td><input type="text" size="20" name="主　　旨：" placeholder="主旨" style="width:100%;height:50px"></td>
+				</tr>
+				<tr>
+				<td><textarea name="留言內容：" rows="6" cols="50" placeholder="內容" style="width:100%;height:150px"></textarea></td>
+				</tr>
+				</table>
+				<input type="submit" value="寄出" style="width:30%"><input type="reset" value="重新輸入" style="width:30%">
+			</form>
+			</div>
+			<div style="background-color:gray;color:white;position:absolute;left:100px;">
+				<br><br>
+				<label style="background-color:gray;color:white;">我的聯絡方式</label><br><br>
+				<label style="background-color:gray;color:white;">信箱
+				<label style="background-color:gray;color:white;">hsnu131206@gmail.com</label><br><br>
+				<label style="background-color:gray;color:white;">電話
+				<label style="background-color:gray;color:white;">0963086489</label><br><br>
+			</div>
+			<br><br><br>
+		</section>
+	</body>
+</html>
